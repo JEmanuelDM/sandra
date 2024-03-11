@@ -31,8 +31,10 @@
 
     // Función para actualizar el contador
     function actualizarContador() {
-      var ahora = new Date().getTime(); // Tiempo actual
-      var diferencia = fechaObjetivo - ahora; // Diferencia entre la fecha objetivo y el tiempo actual
+      var ahora = new Date().getTime(); 
+      var offsetHorario = -7 * 60 * 60 * 1000; 
+       var horaActualLaPaz = ahora + offsetHorario; // Tiempo actual
+      var diferencia = fechaObjetivo - horaActualLaPaz; // Diferencia entre la fecha objetivo y el tiempo actual
 
       // Calcular días, horas, minutos y segundos restantes
       var dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
