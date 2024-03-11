@@ -1,0 +1,53 @@
+body {
+    background-image: url('3670655.jpg');
+    background-size: 150% 120%;
+    background-size: cover; /* Cubre toda la pantalla */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+     margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+    /* Si deseas agregar más estilos al cuerpo de la página, puedes hacerlo aquí */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--dark-color);
+    overflow: hidden;
+    perspective: 1000px;
+}
+#contador {
+    font-size: 34px;
+    margin-bottom: 20px;
+    margin-top: 5%;
+  }
+  .parrafoEjemplo {
+    text-align: right; /* Alinea el texto a la derecha */
+    position: absolute; /* Cambia la posición del elemento */
+    top: 50%; /* Lo coloca en la parte superior */
+    right: 0; /* Lo coloca en la parte derecha */
+    /* Puedes agregar más estilos CSS aquí según sea necesario */
+}
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: 'Hanged Letters'; /* Nombre de la fuente */
+    src: url('Hanged Letters.ttf') format('truetype'); /* Ruta al archivo .ttf */
+}
+@font-face {
+    font-family: 'Sticky Memos Demo Plain'; /* Nombre de la fuente */
+    src: url('KGDefyingGravity.ttf') format('truetype'); /* Ruta al archivo .ttf */
+}
+p {
+    font-size: 34px;
+    margin-bottom: 20px;
+    margin-top: 5%;
+    font-family: 'Hanged Letters', sans-serif; /* Aplicar la fuente a todo el documento */
+}
+div {
+    font-size: 5px;
+    margin-bottom: 20px;
+    margin-top: 5%;
+    font-family: 'Sticky Memos Demo Plain', sans-serif; /* Aplicar la fuente a todo el documento */
+}
