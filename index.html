@@ -21,11 +21,18 @@
   <div class="container">
     <div>
       <p  class="parrafoEjemplo">feliz Dia En</p>
-      <div id="contador" class="parrafoEjemplo"></div>     
+      <div id="contador" class="parrafoEjemplo"></div>    
+       <p  class="parrafoEjemplo" id="linkFelizCumpleanos">Ver Rosa </p>
     </div>
   </div>
   <script>
- 
+  document.addEventListener("DOMContentLoaded", function() {
+  var labelFelizCumpleanos = document.getElementById("linkFelizCumpleanos");
+
+  labelFelizCumpleanos.addEventListener("click", function() {
+    window.location.href = "FelizCumleañosSandra.html";
+  });
+});
     // Fecha objetivo (formato: Año, Mes (0-11), Día, Hora, Minuto, Segundo)
     var fechaObjetivo = new Date(2025, 2, 12, 0, 0, 0); // Cambia la fecha y la hora según tu necesidad
 
