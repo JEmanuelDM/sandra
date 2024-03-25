@@ -20,14 +20,22 @@
 <body id="reproducirAudio" class="not-loaded"> 
   <div class="container">
     <div>
-      <p  class="parrafoEjemplo">feliz Dia</p>
+      <p  class="parrafoEjemplo">feliz Dia En</p>
       <div id="contador" class="parrafoEjemplo"></div>
+  <label id="linkFelizCumpleanos"Ver Rosa :)</label>
+
       
     </div>
   </div>
   <script>
+    document.addEventListener("DOMContentLoaded", function() {
+  var labelFelizCumpleanos = document.getElementById("linkFelizCumpleanos");
+
+  labelFelizCumpleanos.addEventListener("click", function() {
+    window.location.href = "FelizCumleañosSandra.html";
+  });
     // Fecha objetivo (formato: Año, Mes (0-11), Día, Hora, Minuto, Segundo)
-    var fechaObjetivo = new Date(2024, 2, 12, 0, 0, 0); // Cambia la fecha y la hora según tu necesidad
+    var fechaObjetivo = new Date(2025, 2, 12, 0, 0, 0); // Cambia la fecha y la hora según tu necesidad
 
     // Función para actualizar el contador
     function actualizarContador() {
@@ -43,12 +51,12 @@
       var segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
 
       // Mostrar el contador
-      document.getElementById("contador").innerHTML =  horas + " horas " + minutos + " minutos " + segundos + " segundos ";
+      document.getElementById("contador").innerHTML = "" + dias + " dias  " + horas + " horas " + minutos + " minutos " + segundos + " segundos ";
 
 
 
 
-      document.title = ` ${horas + " horas " + minutos + " minutos " + segundos + " segundos "}`;
+     document.title = ` ${ dias + " dias  " + horas + " horas " + minutos + " minutos " + segundos + " segundos "}`;
 
 
 
